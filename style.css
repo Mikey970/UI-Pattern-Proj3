@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.topBar {
+  width: 110%;
+  display: flex;
+  background-color: black;
+  margin-bottom: 80px;
+  color: white;
+  margin-top: -90px;
+  margin-left: -6px;
+  border-left: 20px black solid;
+  border-right: 20px black solid;
+  border-radius: 5px;
+}
+.btcDesc {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.bitcoin {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  font-family: "Fjalla One", sans-serif;
+}
+.header {
+  display: flex;
+}
+.buttonItem {
+  height: 50px;
+  width: 250px;
+}
+
+.listItem {
+  display: inline;
+}
+.buttonList {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 170px;
+  margin-bottom: 0px;
+}
+.sliderBox {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  width: 1000px;
+  background-color: black;
+  border: 2px black solid;
+  border-radius: 3px;
+  justify-content: space-between;
+}
+
+.leftButton {
+  background-color: black;
+  color: white;
+}
+.rightButton {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: flex-end;
+  height: 100%;
+}
