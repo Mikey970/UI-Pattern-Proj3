@@ -14,7 +14,11 @@
   border-right: 20px black solid;
   border-radius: 5px;
 }
+a {
+  color: lightblue;
+}
 .btcDesc {
+  padding-top: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
@@ -22,7 +26,7 @@
 .bitcoin {
   color: white;
   position: absolute;
-  top: 30%;
+  top: 23%;
   left: 45%;
   font-family: "Fjalla One", sans-serif;
 }
@@ -41,11 +45,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 170px;
+  margin-left: 12%;
+  margin-right: 25%;
   margin-bottom: 0px;
 }
 .sliderBox {
   display: flex;
+  padding-top: 20px;
   align-items: center;
   height: 500px;
   width: 1000px;
@@ -56,8 +62,7 @@
 }
 
 .leftButton {
-  background-color: black;
-  color: white;
+  color: black;
 }
 .rightButton {
   display: flex;
@@ -65,4 +70,87 @@
   color: white;
   justify-content: flex-end;
   height: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .sliderBox {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .btcDesc {
+    padding-top: 50px;
+    font-size: small;
+    width: 100%;
+    height: 100%;
+  }
+  .buttonList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttonItem {
+    height: 50px;
+    width: 100%;
+  }
+  .bitcoin {
+    display: flex;
+    margin-top: -10%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1580px) and (max-width: 1660) {
+  .buttonList {
+    margin-left: 50%;
+    margin-left: 34%;
+  }
+  .bitcoin {
+    margin-top: -600px;
+  }
+}
+@media only screen and (min-width: 1790px) and (max-width: 2000px) {
+  .buttonList {
+    margin-left: 22%;
+    margin-right: 25%;
+  }
+  .bitcoin {
+    margin-top: -10px;
+  }
+}
+@media only screen and (min-width: 2500px) and (max-width: 3000px) {
+  .buttonList {
+    margin-left: 29%;
+    margin-right: 25%;
+  }
+  .bitcoin {
+    margin-top: -110px;
+  }
+}
+@media only screen and (min-width: 2050px) and (max-width: 2300px) {
+  .buttonList {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .bitcoin {
+    margin-top: -400px;
+  }
+}
+@media screen and (min-width: 3800px) {
+  .buttonList {
+    margin-left: 36%;
+    margin-right: 25%;
+  }
+  .bitcoin {
+    margin-top: -300px;
+  }
 }
