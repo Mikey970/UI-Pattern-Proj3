@@ -54,6 +54,13 @@ a {
 .buttonItem {
   height: 50px;
   width: 250px;
+  background-color: lightgray;
+  color: black;
+  border: 2px solid black;
+}
+.buttonItem:active {
+  background-color: black;
+  color: white;
 }
 
 .listItem {

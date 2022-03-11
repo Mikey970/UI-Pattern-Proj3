@@ -24,7 +24,15 @@ fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
   fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
   .then(response => response.json())
   .then(data => livePrice.innerHTML ="Last Bitcoin Price: $" + data.market_data.current_price.usd)
-
+  leftButton.style.backgroundColor = "black";
+  leftButton.style.color = "white"
+  rightButton.style.backgroundColor = "lightgray"
+  rightButton.style.color = "black"
+  button3.style.backgroundColor = "lightgray"
+  button3.style.color = "black"
+  button4.style.backgroundColor = "lightgray"
+  button4.style.color = "black"
+  
 })
 
 
@@ -48,7 +56,14 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum")
   fetch("https://api.coingecko.com/api/v3/coins/ethereum")
   .then(response => response.json())
   .then(data => livePrice.innerHTML ="Last Eth Price: $" + data.market_data.current_price.usd)
-
+  rightButton.style.backgroundColor = "black";
+ rightButton.style.color = "white"
+  leftButton.style.backgroundColor = "lightgray"
+  leftButton.style.color = "black"
+  button3.style.backgroundColor = "lightgray"
+  button3.style.color = "black"
+  button4.style.backgroundColor = "lightgray"
+  button4.style.color = "black"
 })
 
 let button3 = document.querySelector(".button3")
@@ -71,7 +86,14 @@ fetch("https://api.coingecko.com/api/v3/coins/polkadot")
   fetch("https://api.coingecko.com/api/v3/coins/polkadot")
   .then(response => response.json())
   .then(data => livePrice.innerHTML ="Last Polkadot Price: $" + data.market_data.current_price.usd)
-  
+  button3.style.backgroundColor = "black";
+ button3.style.color = "white"
+  leftButton.style.backgroundColor = "lightgray"
+  leftButton.style.color = "black"
+  rightButton.style.backgroundColor = "lightgray"
+  rightButton.style.color = "black"
+  button4.style.backgroundColor = "lightgray"
+  button4.style.color = "black"
   })
   
 let button4 = document.querySelector(".button4")
@@ -95,7 +117,14 @@ let button4 = document.querySelector(".button4")
       fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
       .then(response => response.json())
       .then(data => livePrice.innerHTML ="Last Dogecoin Price: $" + data.market_data.current_price.usd)
-
+     button4.style.backgroundColor = "black";
+      button4.style.color = "white"
+       leftButton.style.backgroundColor = "lightgray"
+       leftButton.style.color = "black"
+       button3.style.backgroundColor = "lightgray"
+       button3.style.color = "black"
+       rightButton.style.backgroundColor = "lightgray"
+       rightButton.style.color = "black"
   
   })
   
