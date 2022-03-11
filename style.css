@@ -5,8 +5,8 @@
 .headerTxt {
   font-family: "Fjalla One", sans-serif;
   margin-left: 38%;
-  border: 2px solid white;
-  border-radius: 5px;
+  border-bottom: 2px solid white;
+  border-radius: 1px;
   padding: 5px;
 }
 .topBar {
