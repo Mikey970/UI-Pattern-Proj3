@@ -1,4 +1,5 @@
 let clicked = false
+let livePrice = document.querySelector(".p-text")
 fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
   .then(response => response.json())
   .then(data => leftButton.innerHTML = data.name)
@@ -20,9 +21,13 @@ fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
   fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
   .then(response => response.json())
   .then(data => logo2.src = data.image.small)
-
+  fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
+  .then(response => response.json())
+  .then(data => livePrice.innerHTML ="Last Bitcoin Price: $" + data.market_data.current_price.usd)
 
 })
+
+
 fetch("https://api.coingecko.com/api/v3/coins/ethereum")
   .then(response => response.json())
   .then(data => rightButton.innerHTML = data.name)
@@ -40,7 +45,9 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum")
   fetch("https://api.coingecko.com/api/v3/coins/ethereum")
   .then(response => response.json())
   .then(data => logo2.src = data.image.small)
-
+  fetch("https://api.coingecko.com/api/v3/coins/ethereum")
+  .then(response => response.json())
+  .then(data => livePrice.innerHTML ="Last Eth Price: $" + data.market_data.current_price.usd)
 
 })
 
@@ -61,7 +68,9 @@ fetch("https://api.coingecko.com/api/v3/coins/polkadot")
   fetch("https://api.coingecko.com/api/v3/coins/polkadot")
   .then(response => response.json())
   .then(data => logo2.src = data.image.small)
-
+  fetch("https://api.coingecko.com/api/v3/coins/polkadot")
+  .then(response => response.json())
+  .then(data => livePrice.innerHTML ="Last Polkadot Price: $" + data.market_data.current_price.usd)
   
   })
   
@@ -83,6 +92,9 @@ let button4 = document.querySelector(".button4")
     fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
       .then(response => response.json())
       .then(data => logo2.src = data.image.small)
+      fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
+      .then(response => response.json())
+      .then(data => livePrice.innerHTML ="Last Dogecoin Price: $" + data.market_data.current_price.usd)
 
   
   })

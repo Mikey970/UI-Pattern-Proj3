@@ -2,17 +2,35 @@
   display: flex;
   justify-content: center;
 }
+.headerTxt {
+  font-family: "Fjalla One", sans-serif;
+  margin-left: 38%;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+}
 .topBar {
   width: 110%;
   display: flex;
   background-color: black;
   margin-bottom: 80px;
   color: white;
-  margin-top: -90px;
+
+  margin-top: -30px;
   margin-left: -6px;
   border-left: 20px black solid;
   border-right: 20px black solid;
   border-radius: 5px;
+}
+.p-text {
+  font-family: "Fjalla One", sans-serif;
+  font-size: large;
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-bottom-width: 25%;
 }
 a {
   color: lightblue;
@@ -26,7 +44,7 @@ a {
 .bitcoin {
   color: white;
   position: absolute;
-  top: 23%;
+  top: 28%;
   left: 45%;
   font-family: "Fjalla One", sans-serif;
 }
@@ -133,7 +151,8 @@ a {
     margin-right: 25%;
   }
   .bitcoin {
-    margin-top: -110px;
+    margin-top: -310px;
+    margin-left: 25px;
   }
 }
 @media only screen and (min-width: 2050px) and (max-width: 2300px) {
@@ -151,6 +170,8 @@ a {
     margin-right: 25%;
   }
   .bitcoin {
+    position: absolute;
     margin-top: -300px;
+    margin-left: 90px;
   }
 }
